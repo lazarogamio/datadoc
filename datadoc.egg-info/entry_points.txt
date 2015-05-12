@@ -1,3 +1,0 @@
-[console_scripts]
-datadoc = datadoc.datadoc:launch_new_instance
-

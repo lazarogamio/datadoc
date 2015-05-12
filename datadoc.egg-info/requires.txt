@@ -1,2 +1,0 @@
-gdata==2.0.18
-xmltodict==0.9.1
