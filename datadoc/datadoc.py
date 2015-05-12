@@ -9,8 +9,7 @@ class DataDoc(object):
 
     def __init__(self, args=None):
         """
-        Get the options from cli or another source (in the future), and
-        instantiate a ShapeGrid object.
+        Get the options from cli and go.
         """
         self.cli = cli.CLI()
         self.args = self.cli.parse_arguments(args)
@@ -126,7 +125,7 @@ def launch_new_instance():
     """
     Launch an instance of Binifier.
 
-    This is the entry function of the command-line tool `binify`.
+    This is the entry function of the command-line tool `datadoc`.
     """
     datadoc = DataDoc()
     datadoc.main()
