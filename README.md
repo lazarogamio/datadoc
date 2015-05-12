@@ -13,7 +13,7 @@ DataDoc is available in the Python Package Index.
 To view options, use the help flag.
 
     $ datadoc --help
-    usage: binify [-h] [-n NUM_ACROSS] [-o] [--ignore-type] infile outfile
+    usage: datadoc [fetch, combine]
 
     positional arguments:
       {fetch,combine}

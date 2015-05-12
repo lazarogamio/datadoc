@@ -89,8 +89,7 @@ class DataDoc(object):
 
     def __init__(self, args=None):
         """
-        Get the options from cli or another source (in the future), and
-        instantiate a ShapeGrid object.
+        Get the options from cli and go.
         """
         self.cli = cli.CLI()
         self.args = self.cli.parse_arguments(args)
