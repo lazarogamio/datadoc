@@ -1,0 +1,10 @@
+setup.py
+datadoc/__init__.py
+datadoc/cli.py
+datadoc/datadoc.py
+datadoc.egg-info/PKG-INFO
+datadoc.egg-info/SOURCES.txt
+datadoc.egg-info/dependency_links.txt
+datadoc.egg-info/entry_points.txt
+datadoc.egg-info/requires.txt
+datadoc.egg-info/top_level.txt
