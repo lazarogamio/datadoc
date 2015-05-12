@@ -1,16 +1,14 @@
-DataDoc
-======
+#DataDoc
+
 A command-line tool that fetches data from google spreadsheets and saves it as json in the filesystem.
 
-Installation
-------------
+##Installation
 
 DataDoc is available in the Python Package Index.
 
     $ pip install datadoc
 
-Usage
------
+##Usage
 
 To view options, use the help flag.
 
@@ -34,22 +32,30 @@ To view options, use the help flag.
       dir         Directory with the data files you want to use.
       dest        Output file destination
 
-Examples
---------
+##Examples
+
+####Command line
 
 To grab a google doc and save it in the current directory as `data.json`:
 
-    $ datadoc fetch 1u4nXvpXdJjs0YWXd_VSy1FOcU7WfMTHCD-cp4TMiTNA data.json
+    $ datadoc fetch spreadsheet_id data.json
 
 To combine json files in a directory and convert them to a named dictionary in `data.json`:
 
     $ datadoc combine directory data.json
 
-Caveats
--------
+####Python
+    
+    from datadoc import datadoc as doc
+    
+    # Returns a python dictionary
+    test = doc.fetchData('spreadsheet_id')
+    
+    # Returns a python dictionary of all json files in the directory
+    test = doc.combineFiles('directory_name')
+
+##Caveats
 
 - For the `fetch` command to work, the spreadsheet needs to be published
 - Output is only in json at the moment
 - Combine only takes json
-
-
