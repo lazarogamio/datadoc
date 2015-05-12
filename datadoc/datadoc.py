@@ -121,9 +121,9 @@ class DataDoc(object):
 
 def launch_new_instance():
     """
-    Launch an instance of Binifier.
+    Launch an instance
 
-    This is the entry function of the command-line tool `binify`.
+    This is the entry function of the command-line tool `datadoc`.
     """
     datadoc = DataDoc()
     datadoc.main()

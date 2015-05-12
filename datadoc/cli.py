@@ -14,10 +14,6 @@ class CLI(object):
         self.parser = argparse.ArgumentParser(usage='datadoc [fetch, combine]')
         self.sub = self.parser.add_subparsers()
         
-        # self.parser.add_argument('task',
-        #     help='ID of google doc to use'
-        # )
-    
         self.fetch = self.sub.add_parser('fetch', help='Grab a google spreadsheet and save it down.', usage='datadoc fetch [spreadsheetID] [outfile]')
 
         self.fetch.add_argument('id',
